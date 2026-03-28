@@ -42,6 +42,7 @@ OGNWMN      	for the Wingman             		https://www.wingmanfly.app/
 OGNVOL      	for the Volandoo             		https://www.volandoo.com/
 OGNWGL      	for the WeGlide             		https://www.weglide.org/
 OGBSTOP         for the BirdStop devices		https://www.birdstop.com/
+OGNPUR      	for the PureTrack             		https://puretrack.io/
 
 
 ---------------------------------------------------------------------------------------------------------------------------------
