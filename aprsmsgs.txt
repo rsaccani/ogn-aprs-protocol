@@ -54,46 +54,7 @@ LERS>OGNDVS,TCPIP*,qAC,GLIDERN3:>175503h 1297:0 2.563s/1ms 35dB/+7kHz 163/3/4kt 
 
 Where the TOCALLs are defined as the following:
 
-OGNFLR 		for the flarm units 			http://flarm.com
-OGFLR6		for the flarm units (old version 6) 	http://flarm.com
-OGFLR7		for the flarm units (experimental) 	http://flarm.com
-OGFLR 		for the flarm units 			http://flarm.com
-OGNDSX 		for the T_advisory			http://www.d-s-x.net/
-OGNTRK 		for the OGN tracker			http://wiki.glidernet.org
-OGADSL 		for the OGN tracker with ADS-L protocol http://wiki.glidernet.org
-OGADSB 		for the ADS-B 				https://www.adsbexchange.com/ 
-OGNFNT 		for the FANET				https://www.skytraxx.eu/
-OGNPAW 		for the PilotAware			https://www.pilotaware.com/
-OGSPOT 		for the SPOT 				https://www.findmespot.com
-OGSPID 		for the Spider				https://www.spidertracks.com/
-OGLT24 		for the LiveTrack24 			https://www.livetrack24.com/
-OGSKYL 		for the Skyline 			https://www.xcsoar.org/
-OGCAPT 		for the Capture 			https://www.capturs.com/
-OGNAVI 		for the Naviter devices 		http://naviter.com
-OGNMAV 		for the MAVlink from drones		https://ardupilot.org/dev/docs/mavlink-basics.html
-OGFLYM 		for the Flymaster devices		https://www.flymaster.net/
-OGNINRE		for the Garmin InReach devices		https://discover.garmin.com/en-US/inreach/personal/
-OGEVARIO 	for the eVario devices			https://apps.apple.com/us/app/evario-variometer-paraglider/id1243708983
-OGNDELAY 	for the IGC sanctioned championships delayed messages using OGN/IGC approved trackers, it contains the number of seconds delayed
-OGPAW 		for the PilotAware devices		https://www.pilotaware.com/
-OGNTTN 		for the The Things Network devices.	https://www.thethingsnetwork.org/
-OGNHEL 		for the Helium LoRaWan devices.		https://www.helium.com/
-OGAVZ  		for the AVIAZE devices.			https://www.aviaze.com/
-OGNSKY  	for the SafeSky devices/app		https://www.safesky.app/en 
-OGNMKT  	for the MicroTrack devices		https://microtrak.fr/
-OGNEMO  	for the Canadian NEMO devices		
-OGNMYC    	for MyCloudbase Tracker       		https://mycloudbase.com/tracker/
-OGSTUX          for Stratux trackers
-OGNSXR          for moshe.braner@gmail.com		https://github.com/moshe-braner/Open-Glider-Network-Groundstation
-OGAIRM		for AirMate 				(https://www.airmate.aero)
-FXCAPP		for flyxc 				(https://flyxc.app/)
-OGAPIK		for APIK OEM and compliant devices	https://api-k.com
-OGMSHT		for meshtastic devices			https://meshtastic.org/ 
-OGNDVS		for weather devices like Davis 		https://www.davisinstruments.com/pages/weather-stations https://www.sainlogic.com/
-OGNWMN      	for the Wingman             		https://www.wingmanfly.app/
-OGNVOL      	for the Volandoo             		https://www.volandoo.com/
-OGNWGL      	for the WeGlide             		https://www.weglide.org/
-
+see tocalls.txt file for the complete list of TOCALLs and their meaning.
 
 ---------------------------------------------------------------------------------------------------------------------------------
 
