@@ -433,10 +433,25 @@ Manufacturer IDs:
 0x05		Windline
 0x06		Burnair.ch
 0x07		SoftRF
+0x08  		GXAircom
+0x09  		Airtribune
+0x0A  		FLARM
+0x0B  		FlyBeeper
+0x0C  		Leaf Vario
+0x0D  		LYNKX
 ...
+0x10  		alfapilot
 0x11		FANET+ (incl FLARM. Currently Skytraxx, and Naviter)
 ...
+0x20  		XC Tracer
+...
+0xBA  		Burnair
+...
+0xCB		Cloudbuddy
+...
 0xE0		OGN Tracker
+...
+0xE4  		4aviation
 ...
 0xFA		Various
 		0x0001-0x00FF		GetroniX
