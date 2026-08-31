@@ -41,6 +41,7 @@ OGNDVS		for weather devices like Davis 		https://www.davisinstruments.com/pages/
 OGNWMN      	for the Wingman             		https://www.wingmanfly.app/
 OGNVOL      	for the Volandoo             		https://www.volandoo.com/
 OGNWGL      	for the WeGlide             		https://www.weglide.org/
+OGSKYB          for the SkyBase app and Vario
 OGBSTOP         for the BirdStop devices		https://www.birdstop.com/
 OGNPUR      	for the PureTrack             		https://puretrack.io/
 OGMLAT      	for the cwOGN Multilateration msgs      https://glidernet.org

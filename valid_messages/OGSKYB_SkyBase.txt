@@ -1,0 +1,8 @@
+# The following beacons are examples for SkyBase's APRS format version OGSKYB-1.
+# The first message uses identifiable mode; the second uses anonymous mode and
+# includes every optional motion field currently emitted by SkyBase.
+#
+# source: https://github.com/glidernet/ogn-aprs-protocol
+#
+SKYBASE>OGSKYB,TCPIP*:/130807h4704.15N/01526.89E'/A=001188 id1FFE221D
+SKYBASE>OGSKYB,TCPIP*:/130837h4704.16N/01526.90E'123/018/A=001201 id1C97DDFD +120fpm
