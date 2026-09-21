@@ -26,7 +26,7 @@ Aircraft type: paraglider (7) or hang glider (6), whichever the pilot flies
 
 ## Position
 
-    VVO1A2B3C>OGNVVO:/194125h4543.28N/00924.99Eg135/000/A=001083 id1E1A2B3C +118fpm +5.0rot
+    VVO1A2B3C>OGNVVO:/194125h4543.28N/00924.99Eg135/000/A=001083 id1E1A2B3C +118fpm +5.0rot gps5x8
 
 Fields:
 
@@ -48,6 +48,13 @@ Fields:
   which is right on a glide and wrong in a thermal, where a paraglider goes
   round a forty metre circle and gets nowhere. A target turning at this rate is
   a target not to extrapolate.
+- `gps5x8` the GPS accuracy at that fix, horizontal and vertical, in metres.
+  CoreLocation states both on every fix, so this costs nothing to send and
+  tells a reader how much to trust the position rather than leaving it to be
+  assumed. It also keeps the turn rate readable: `python-ogn-client` 1.3.0
+  drops whichever of these optional fields ends the packet, so a packet ending
+  on `+5.0rot` parses with no turn rate at all, and a field behind it is what
+  makes the turn rate survive.
 
 The course and the ground speed are worth one line of their own, because they
 are what anybody extrapolating actually uses. CoreLocation repeats the previous
