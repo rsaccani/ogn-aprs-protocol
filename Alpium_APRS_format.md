@@ -1,8 +1,8 @@
 ---
 title: OGNALP APRS message specification
 description: APRS messages sent by the Alpium backend to OGN
-date: 2026-09-23
-version: 1.0.1
+date: 2026-09-24
+version: 1.0.2
 ---
 
 # OGNALP APRS message specification
@@ -29,6 +29,14 @@ The backend login has this form:
 user ALPIUM pass <passcode> vers alpium-ogn-feed 1.0
 ```
 
+Alpium connects as an ordinary client and relays positions on behalf of its
+pilots' devices, so each packet carries the client-side construct `qOR` with
+**no callsign and no login after it**. The server rewrites the "O" to an "A"
+and appends Alpium's callsign, so consumers see `...,qAR,ALPIUM:`.
+
+The examples in section 6 are therefore what Alpium SENDS. `aprsmsgs.txt`
+carries the same two beacons in the form the network emits them.
+
 `OGNALP` identifies version 1 of this format. Alpium does not currently
 append a version suffix to the TOCALL.
 
@@ -37,7 +45,7 @@ append a version suffix to the TOCALL.
 Alpium emits only complete TNC2 position lines in this form:
 
 ```
-ALP<address>>OGNALP,qAS,ALPIUM:/<timestamp>h<latitude>/<longitude>'<course>/<speed>/A=<altitude> !W<precision>! id<identifier> <climb>fpm
+ALP<address>>OGNALP,qOR:/<timestamp>h<latitude>/<longitude>'<course>/<speed>/A=<altitude> !W<precision>! id<identifier> <climb>fpm
 ```
 
 Parameters:
@@ -155,17 +163,18 @@ doubling to a maximum of 120 seconds.
 
 ## 6 Examples
 
-Both examples below are produced by the encoder itself and decode with
-`python-ogn-client`. A paraglider climbing in a thermal:
+Both examples below are exactly what the backend SENDS, produced by the
+encoder itself and decoded with `python-ogn-client`. A paraglider climbing in
+a thermal:
 
 ```
-ALP9E3C1A>OGNALP,qAS,ALPIUM:/101530h4550.36N/00902.04E'090/015/A=003281 !W46! id1F9E3C1A +059fpm
+ALP9E3C1A>OGNALP,qOR:/101530h4550.36N/00902.04E'090/015/A=003281 !W46! id1F9E3C1A +059fpm
 ```
 
 A hang glider whose phone reports no ground speed or course:
 
 ```
-ALP4B77D0>OGNALP,qAS,ALPIUM:/101612h4552.09N/00905.77E'000/000/A=004120 !W82! id1B4B77D0 -250fpm
+ALP4B77D0>OGNALP,qOR:/101612h4552.09N/00905.77E'000/000/A=004120 !W82! id1B4B77D0 -250fpm
 ```
 
 ## 7 Related documents
